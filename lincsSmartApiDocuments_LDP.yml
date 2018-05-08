@@ -3,8 +3,8 @@ info:
   version: '1.0'
   title: LINCS Data Portal API
   description: >-
-    Documentation of the LINCS Data Portal web services. Learn more about
-    [LINCS Data Portal](http://lincsportal.ccs.miami.edu/dcic-portal/)
+    Documentation of the LINCS Data Portal web services. Learn more about [LINCS
+    Data Portal](http://lincsportal.ccs.miami.edu/dcic-portal/)
   termsOfService: 'http://lincsportal.ccs.miami.edu/apis/#/terms-of-use'
   contact:
     name: BD2K-LINCS DCIC
@@ -118,12 +118,11 @@ paths:
             A query response object with 'documents' property, each document
             corresponds to a dataset that matched the query criteria. 
           x-responseValueType:
-            '-path': lincs.data
-            valueType: 'http://identifiers.org/'
+            - path: lincs.data
+              valueType: 'http://identifiers.org/'
   /mechanismOfAction:
     get:
-      summary: >-
-        Get known mechanisms of action for LINCS small molecules.
+      summary: Get known mechanisms of action for LINCS small molecules.
       parameters:
         - name: id
           in: query
@@ -157,8 +156,8 @@ paths:
             corresponds to a mechanism of action that matched the query
             criteria. 
           x-responseValueType:
-            '-path': lincs.smallmolecule
-            valueType: 'http://identifiers.org/'
+            - path: lincs.smallmolecule
+              valueType: 'http://identifiers.org/'
   /bioactivity:
     get:
       summary: >-
@@ -209,8 +208,8 @@ paths:
             A query response object with 'documents' property, each document
             corresponds to a bioactivity that matched the query criteria. 
           x-responseValueType:
-            '-path': lincs.smallmolecule
-            valueType: 'http://identifiers.org/'
+            - path: lincs.smallmolecule
+              valueType: 'http://identifiers.org/'
   /drugindication:
     get:
       summary: >-
@@ -258,7 +257,7 @@ paths:
             A query response object with 'documents' property, each document
             corresponds to a drug indication that matched the query criteria. 
           x-responseValueType:
-            '-path': lincs.smallmolecule
+          - path: lincs.smallmolecule
             valueType: 'http://identifiers.org/'
   /disease:
     get:
@@ -295,5 +294,5 @@ paths:
             A query response object with 'documents' property, each document
             corresponds to a disease that matched the query criteria. 
           x-responseValueType:
-            '-path': lincs.cell
-            valueType: 'http://identifiers.org/'
+            - path: lincs.cell
+              valueType: 'http://identifiers.org/'
