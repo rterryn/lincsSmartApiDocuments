@@ -90,7 +90,7 @@ paths:
       summary: >-
         Get metadata for LINCS assay data sets (DOES NOT RETURN ASSAY ENDPOINT
         DATA). Parameter 'searchTerm' allows querying by specific metadata
-        fields within the cell line records.
+        fields within the assay metadata records.
       parameters:
         - name: searchTerm
           in: query
