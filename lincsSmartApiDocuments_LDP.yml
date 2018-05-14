@@ -43,7 +43,7 @@ paths:
           schema:
             type: integer
       responses:
-        200:
+        "200":
           description: >-
             A query response object with 'documents' property, each document
             corresponds to a small molecule that matched the query criteria. 
@@ -78,7 +78,7 @@ paths:
           schema:
             type: integer
       responses:
-        200:
+        "200":
           description: >-
             A query response object with 'documents' property, each document
             corresponds to a cell line that matched the query criteria. 
@@ -113,7 +113,7 @@ paths:
           schema:
             type: integer
       responses:
-        200:
+        "200":
           description: >-
             A query response object with 'documents' property, each document
             corresponds to a dataset that matched the query criteria. 
@@ -150,7 +150,7 @@ paths:
           schema:
             type: integer
       responses:
-        200:
+        "200":
           description: >-
             A query response object with 'documents' property, each document
             corresponds to a mechanism of action that matched the query
@@ -203,7 +203,7 @@ paths:
           schema:
             type: integer
       responses:
-        200:
+        "200":
           description: >-
             A query response object with 'documents' property, each document
             corresponds to a bioactivity that matched the query criteria. 
@@ -252,7 +252,7 @@ paths:
           schema:
             type: integer
       responses:
-        200:
+        "200":
           description: >-
             A query response object with 'documents' property, each document
             corresponds to a drug indication that matched the query criteria. 
@@ -289,7 +289,7 @@ paths:
           schema:
             type: integer
       responses:
-        200:
+        "200":
           description: >-
             A query response object with 'documents' property, each document
             corresponds to a disease that matched the query criteria. 
